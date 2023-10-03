@@ -1,0 +1,167 @@
+.navbar{
+    background-color:#000000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+
+
+}
+.navbar p a {
+    display: flex;
+    justify-content: center;
+    color: #ffff;
+    text-align: center;
+    padding: 0 3rem;0 
+
+}
+.navlinks{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.logo{
+    background-color: #0a272e;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+   
+}
+.logo img{
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.presentacion{
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.presentacion h1{
+    font-size: 3rem;
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    color: white;
+    text-shadow: 0 0 8px rgba(0, 0, 0,0.8);
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; 
+
+}
+.presentacion p{
+    position: absolute;
+    top: 115%;
+    left: 48%;
+    background: #fff0;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #fff;
+    animation: bounce;
+    animation-duration: 2s; 
+
+   
+}
+.presentacion p a{
+    color: white;
+    margin-left: 22px;
+
+}
+.homePiedefoto img{
+    display: flex;
+    max-width: 100%;
+    margin-left: 5px;
+}
+ 
+.menu_mobile{display: none}
+.home_mobile{display: none;}
+@media screen and (max-width: 768px){
+	header{ display: none}
+    .presentacion{display: none;}
+	.menu_mobile{
+        display: flex;
+        justify-content: space-between; 
+        padding: 1rem;
+        align-items: center;
+        background: #0a272e;
+        width: auto;
+        padding-right: 60px;
+        padding-left: 10px;
+        }
+    .menu_mobile .logo{
+        display: flex; 
+        width: 150px; 
+     }
+    .menu_mobile .logo img {
+        width: 120px;
+    }
+    .menu_mobile .menu_hamburguesa img{
+        width: 40px;
+        padding: 0 10%;
+    }
+    .menu_mobile div{
+        justify-content: center;
+        width: 45px;
+        border-radius: 8px;
+        background-color: #334d53; 
+        position: relative;
+        box-shadow: 1px 1px 10px 10px rgba(0,0,0,0.2);
+    }
+    .menu_mobile .menu_hamburguesa ul{
+        visibility: hidden; 
+        opacity: 0; 
+        position: absolute;
+        width: 300px;
+        height: auto;
+        display: block!important;
+        margin: 0;list-style: none;
+        padding: 1rem;color:#000;
+        }
+    .menu_mobile .menu_hamburguesa:hover ul{
+        visibility: visible;
+        opacity: 1; 
+        height: auto;
+        font-size: 15px;
+        background-color: #fff;
+        }
+    .menu_mobile .menu_hamburguesa li a{
+        color: #000;
+        font-size: 15px;
+        visibility:unset;
+
+    }
+    .home_mobile{
+        display:flex ;
+
+}
+.home_mobile h1{
+    font-size: 15px;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    color: white;
+    text-shadow: 0 0 8px rgba(0, 0, 0,0.8);
+
+
+}
+.home_mobile p{
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    background: #fff0;
+    width: 50px;
+    height: 20px;
+    border: 1px solid #fff;
+   
+}
+.home_mobile p a {
+    color: white;
+    justify-content: center;
+    display: flex;
+
+}
